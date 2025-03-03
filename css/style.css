@@ -3,7 +3,12 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  overflow-x: hidden; /* забрвав горизонтальний скролл */
+  overflow-x: hidden; /* Заборона горизонтального скролу */
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
 
 header {
@@ -15,7 +20,7 @@ header {
 }
 
 nav {
-  display: flex;
+  display: flex; /* Flexbox для навігації */
   justify-content: center;
   background: #555;
 }
@@ -25,6 +30,7 @@ nav a {
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
+  transition: background 0.3s;
 }
 
 nav a:hover {
@@ -33,7 +39,6 @@ nav a:hover {
 
 section {
   padding: 20px;
-
   font-size: 20px;
 }
 
@@ -44,7 +49,7 @@ section {
 
 form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Розташування полів один під одним */
   align-items: center;
   gap: 10px;
   max-width: 500px;
@@ -86,15 +91,6 @@ form button:hover {
   background: #555;
 }
 
-
-body {
-  background: url('../img/background.jpg') no-repeat center center fixed;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -104,7 +100,20 @@ body {
   }
 }
 
-body {
-  opacity: 0;
-  animation: fadeIn 1s ease forwards;
+/* Медіазапити для адаптивності */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Вертикальне меню */
+    align-items: center; /* Вирівнювання по центру */
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+    max-width: 100%; /* Розтягуємо форму на всю ширину */
+    padding: 10px;
+  }
 }
