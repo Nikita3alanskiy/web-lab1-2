@@ -1,0 +1,12 @@
+section {
+  padding: 20px;
+  text-align: center; /* Вирівнювання тексту по центру */
+}
+
+section h2 {
+  margin-bottom: 10px; /* Відступи під заголовками */
+}
+
+section p {
+  margin-bottom: 10px; /* Відступи між абзацами */
+}
