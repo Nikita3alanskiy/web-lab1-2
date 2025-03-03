@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 18px; /* Збільшення розміру шрифта для всього тіла */
-  overflow-x: hidden; /* Забороняємо горизонтальний скролл */
+  font-size: 18px;
+  overflow-x: hidden; /* забрвав горизонтальний скролл */
 }
 
 header {
@@ -11,7 +11,7 @@ header {
   color: white;
   padding: 15px;
   text-align: center;
-  font-size: 24px; /* Збільшений шрифт для заголовку */
+  font-size: 24px;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav a {
   color: white;
   padding: 15px;
   text-decoration: none;
-  font-size: 18px; /* Збільшення шрифта для посилань в навігації */
+  font-size: 18px;
 }
 
 nav a:hover {
@@ -34,7 +34,7 @@ nav a:hover {
 section {
   padding: 20px;
 
-  font-size: 20px; /* Збільшення шрифта для тексту в секціях */
+  font-size: 20px;
 }
 
 .home-banner {
@@ -53,13 +53,13 @@ form {
   background: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 10px;
-  font-size: 18px; /* Збільшення шрифта для форм */
+  font-size: 18px;
 }
 
 form label {
   font-weight: bold;
   margin-bottom: 5px;
-  font-size: 20px; /* Збільшення шрифта для міток в формах */
+  font-size: 20px;
 }
 
 form input, form textarea {
@@ -68,7 +68,7 @@ form input, form textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
-  font-size: 18px; /* Збільшення шрифта для полів вводу */
+  font-size: 18px;
 }
 
 form button {
@@ -79,7 +79,7 @@ form button {
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
-  font-size: 18px; /* Збільшення шрифта для кнопки */
+  font-size: 18px;
 }
 
 form button:hover {
@@ -87,13 +87,10 @@ form button:hover {
 }
 
 
-
-
-/* Додавання фону для сторінки */
 body {
-  background: url('../img/background.jpg') no-repeat center center fixed; /* Фонова картинка */
-  background-size: cover; /* Робимо, щоб фон покривав всю сторінку */
-  margin: 0; /* Забираємо стандартні відступи */
-  padding: 0; /* Забираємо стандартні відступи */
-  height: 100%; /* Встановлюємо висоту для покриття всієї сторінки */
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
