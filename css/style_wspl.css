@@ -1,0 +1,35 @@
+/* Стиль для заголовків змагань */
+.event-title {
+  display: block;
+  background-color: #777;
+  color: white;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.event-title:hover {
+  background-color: #777;
+}
+
+/* Сховуємо чекбокс */
+.event-checkbox {
+  display: none;
+}
+
+/* Сховуємо інформацію про захід за замовчуванням */
+.event-details {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* Якщо чекбокс вибраний, показуємо інформацію */
+.event-checkbox:checked + .event-details {
+  display: block;
+}
