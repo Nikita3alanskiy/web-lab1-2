@@ -1,34 +1,34 @@
 .gallery {
-  display: flex; /* Включення Flexbox */
-  flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок */
-  gap: 20px; /* Відступи між картками */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center; /* Вирівнювання по центру */
   padding: 20px;
 }
 
 .gallery-item {
-  display: flex; /* Flexbox для вирівнювання вмісту картки */
-  flex-direction: column; /* Розташування елементів зверху вниз */
-  align-items: center; /* Вирівнювання по центру */
-  text-align: center; /* Текст по центру */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 15px;
-  border: 1px solid #ccc; /* Рамка картки */
-  border-radius: 10px; /* Закруглені кути */
-  background: #f4f4f4; /* Фон картки */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тінь */
-  width: 300px; /* Фіксована ширина картки */
-  transition: transform 0.3s ease; /* Анімація при наведенні */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
-  transform: scale(1.05); /* Збільшення при наведенні */
+  transform: scale(1.05);
 }
 
 .gallery-item img {
-  width: 100%; /* Фото розтягується по ширині картки */
-  height: 200px; /* Фіксована висота */
-  object-fit: cover; /* Збереження пропорцій фото */
-  border-radius: 10px; /* Закруглені кути для фото */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .gallery-item p {
@@ -40,7 +40,7 @@
 
 @media (max-width: 768px) {
   .gallery {
-    flex-direction: column; /* Вертикальне розташування для мобільних */
-    align-items: center; /* Центрування */
+    flex-direction: column;
+    align-items: center;
   }
 }

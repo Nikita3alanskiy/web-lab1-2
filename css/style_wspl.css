@@ -1,4 +1,3 @@
-/* Стиль для заголовків змагань */
 .event-title {
   display: block;
   background-color: #777;
@@ -16,7 +15,7 @@
   transform: scale(1.05);
 }
 
-/* Сховуємо чекбокс */
+
 .event-checkbox {
   display: none;
 }

@@ -1,13 +1,13 @@
 section {
   padding: 20px;
-  text-align: center; /* Вирівнювання тексту по центру */
+  text-align: center;
 }
 
 section h2 {
-  margin-bottom: 10px; /* Відступи під заголовками */
+  margin-bottom: 10px;
 }
 
 section p {
-  margin-bottom: 10px; /* Відступи між абзацами */
+  margin-bottom: 10px;
 }
 
